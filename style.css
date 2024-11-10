@@ -1,0 +1,175 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f2ef;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+  
+/* Resume Container */
+.resume-container {
+    max-width: 700px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.resume-container:hover {
+    transform: scale(1.02);
+}
+  
+/* Section Styling */
+.section {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: border 0.3s ease;
+}
+
+.section .content {
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    transition: opacity 0.3s ease, max-height 0.3s ease;
+    max-height: 1000px;
+    overflow: hidden;
+}
+
+/* Hidden class to collapse content */
+.section .content.hidden {
+    opacity: 0;
+    max-height: 0;
+    padding: 0;
+}
+
+.section .content {
+    padding-top: 15px;
+}
+
+/* Toggle Button Styling */
+.toggle-button {
+    background-color: #0073b1;
+    color: #fff;
+    border: none;
+    padding: 12px 16px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px 8px 0 0;
+    display: block;
+    width: 100%;
+    text-align: left;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.toggle-button:hover {
+    background-color: #005580;
+    color: #e0e0e0;
+}
+
+.toggle-button:focus {
+    outline: 2px solid #005580;
+}
+
+/* Personal Info Layout */
+.personal-details {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px; /* Adding space between profile picture and details */
+}
+
+.profile-pic {
+    width: 120px; /* Smaller, circular profile picture */
+    height: 120px;
+    border-radius: 50%; /* Circle shape */
+    border: 2px solid #0073b1; /* Add a border around the profile picture */
+    object-fit: cover; /* Ensures the image fits inside the circle */
+    transition: box-shadow 0.3s ease;
+}
+
+.profile-pic:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info {
+    flex: 1; /* Allow the text to take up the remaining space */
+    color: #333;
+}
+
+.contact-info h1 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 1.0em;
+    margin-top: 5px;
+    line-height: 1.0;
+}
+
+/* Skill Bars */
+.skills-list {
+    list-style: none;
+    padding: 0px;
+    line-height: 2.0;
+}
+.skill-bar {
+    background-color: #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.skill-level {
+    height: 10px;
+    background-color: #0073b1;
+    border-radius: 4px;
+}
+  
+/* Work Experience */
+.company-name {
+    font-weight: bold;
+    color: #333;
+}
+.job-dates {
+    color: #777;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+.job-responsibilities {
+    margin-top: 10px;
+    padding-left: 20px;
+    list-style: disc;
+    color: #555;
+    line-height: 1.5;
+}
+  
+/* Responsive Design */
+@media (max-width: 600px) {
+    .resume-container {
+        padding: 15px;
+    }
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+    .contact-info h1 {
+        font-size: 1.3em;
+    }
+    .contact-info p {
+        font-size: 0.9em;
+    }
+}

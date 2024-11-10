@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive LinkedIn-style Resume</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="resume-container">
+    <!-- Personal Information -->
+    <section class="section personal-info" id="personal-info-section">
+      <button class="toggle-button" data-target="personal-info-section">Personal Information</button>
+      <div class="content">
+        <div class="personal-details">
+          <img src="/profile.jpg" alt="Profile Picture" class="profile-pic">
+          <div class="contact-info">
+            <h1>Muhammad Farhan</h1>
+            <p><strong>Email:</strong> farhan.muhammad@ptclgroup.com</p>
+            <p><strong>Phone:</strong> +92 331 2218909</p>
+            <p><strong>Location:</strong> Karachi, Pakistan</p>
+          </div>
+        </div>
+        <p class="summary">Accomplished Sr. Corporate Trainer with extensive experience at PTCL Group, specializing in training newly onboarded employees. Proven expertise in customer service, delivering comprehensive training programs, and fostering a culture of continuous learning. Currently enhancing skills in Web Development, AI and Flutter to stay ahead in the tech-driven training landscape.</p>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section education" id="education-section">
+      <button class="toggle-button" data-target="education-section">Education</button>
+      <div class="content">
+        <div class="education-entry">
+          <h2>Iqra University</h2>
+          <p><strong>Masters of Business Administration in Supply Chain Management</strong></p>
+          <p class="education-dates">2015 - 2019</p>
+          <p>Relevant coursework: Business Process Re-engineering, Logistics, Procurement, Supply Chain, Warehousing.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section skills" id="skills-section">
+      <button class="toggle-button" data-target="skills-section">Skills</button>
+      <div class="content">
+        <ul class="skills-list">
+          <li>
+            <span><strong>Training & Development</strong></span>
+            <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
+          </li>
+          <li>
+            <span><strong>Customer Services</strong></span>
+            <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
+          </li>
+          <li>
+            <span><strong>IELTS</strong></span>
+            <div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div>
+          </li>
+          <li>
+            <span><strong>Project Management</strong></span>
+            <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
+          </li>
+          <li>
+            <span><strong>Web Development</strong></span>
+            <div class="skill-bar"><div class="skill-level" style="width: 70%;"></div></div>
+          </li>
+          <li>
+            <span><strong>Mobile App Development</strong></span>
+            <div class="skill-bar"><div class="skill-level" style="width: 70%;"></div></div>
+          </li>
+          <li>
+            <span><strong>Leadership</strong></span>
+            <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
+          </li>
+          <li>
+            <span><strong>Communication</strong></span>
+            <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Work Experience -->
+    <section class="section work-experience" id="work-experience-section">
+      <button class="toggle-button" data-target="work-experience-section">Work Experience</button>
+      <div class="content">
+        <div class="job-entry">
+          <h2>Senior Trainer (Assistant Manager)</h2>
+          <p class="company-name">PTCL Group</p>
+          <p class="job-dates">2020 - Present</p>
+          <ul class="job-responsibilities">
+            <li>Develop and deliver Training Programs.</li>
+            <li>Customer Services and Produt Trainings.</li>
+            <li>Performance Evaluation and Feedback.</li>
+            <li>Leadership & Mentoring.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>
